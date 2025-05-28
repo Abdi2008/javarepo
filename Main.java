@@ -47,7 +47,7 @@
 
         }
 }**/
-class Main {
+public class Main {
         public static void main(String[] args) {
                 final int num1=2;               // you use final to make a variable constant
                 //num1=4;                         // this will cause an error because num1 is declared as final 
