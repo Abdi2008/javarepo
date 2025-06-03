@@ -34,31 +34,31 @@
 // }
             // Project 2: Temperature Converter
             // Description: Convert temperature between Celsius and Fahrenheit based on user choice.
-import java.util.Scanner;
-public class Projects{
-    public static void main(String[] args){
-        Scanner obj= new Scanner(System.in);
-        System.out.println("Choose your prefered type of measurement");
-        System.out.println("1 for Celsius to Fahrenheit:");
-        System.out.println("2 for Fahrenheit to Celsius:");
-        System.out.println("Choose between 1 and 2: ");
-        int choice= obj.nextInt();
-        double temp,convertedTemp;
-        if (choice==1){
-            System.out.println("Enter Temprature in Celcius: ");
-            temp=obj.nextDouble();
-            convertedTemp=(temp*9/5)+32;
-            System.out.println("Here's the converted tempreture: "+convertedTemp+" F");
-        } else if(choice==2){
-            System.out.println("Enter temprature in Fahrenheit");
-            temp = obj.nextDouble();
-            convertedTemp=(temp-32) * 5/9;
-            System.out.println("Here is the converted tempreture: "+ convertedTemp+" C");
-        } else{
-            System.out.println("Invalid Choice!!!");
-        }
-    }
-}
+// import java.util.Scanner;
+// public class Projects{
+//     public static void main(String[] args){
+//         Scanner obj= new Scanner(System.in);
+//         System.out.println("Choose your prefered type of measurement");
+//         System.out.println("1 for Celsius to Fahrenheit:");
+//         System.out.println("2 for Fahrenheit to Celsius:");
+//         System.out.println("Choose between 1 and 2: ");
+//         int choice= obj.nextInt();
+//         double temp,convertedTemp;
+//         if (choice==1){
+//             System.out.println("Enter Temprature in Celcius: ");
+//             temp=obj.nextDouble();
+//             convertedTemp=(temp*9/5)+32;
+//             System.out.println("Here's the converted tempreture: "+convertedTemp+" F");
+//         } else if(choice==2){
+//             System.out.println("Enter temprature in Fahrenheit");
+//             temp = obj.nextDouble();
+//             convertedTemp=(temp-32) * 5/9;
+//             System.out.println("Here is the converted tempreture: "+ convertedTemp+" C");
+//         } else{
+//             System.out.println("Invalid Choice!!!");
+//         }
+//     }
+// }
             // Project 3: Grade Calculator
             // Description: Takes a student's score and assigns a grade (A, B, C, D, F).
 // import java.util.Scanner;
@@ -88,3 +88,29 @@ public class Projects{
 //         }
 //     }
 // }
+                //Project 4: BMI Calculator
+                // Description: Calculates Body Mass Index (BMI) and categorizes it (Underweight, Normal, Overweight, Obese).
+import java.util.Scanner;
+public class Projects{
+    public static void main(String[] args){
+        Scanner myScanner= new Scanner(System.in);
+        System.out.println("\t We're gonna Calculate your BMI;");
+        System.out.println("Enter your Weight in kg's: ");
+        double weight;
+        double height;
+        weight= myScanner.nextDouble();
+        System.out.println("\t \tEnter your height in cm;");
+        height= myScanner.nextDouble();
+        double BMI =weight / (height*height);
+        System.out.println("Your BMI is: "+BMI);
+        if (BMI<18.5) {
+            System.out.println("\t \t Underweight");
+        } else if (BMI<25) {
+            System.out.println("\t \tNormal Weight");
+        } else if (BMI<30){
+            System.out.println("\t \t OverWeight");
+        } else{
+            System.out.println("OBESE");
+        }
+    }
+}
