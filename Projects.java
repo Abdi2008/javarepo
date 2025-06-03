@@ -34,40 +34,57 @@
 // }
             // Project 2: Temperature Converter
             // Description: Convert temperature between Celsius and Fahrenheit based on user choice.
-// import java.util.Scanner;
-// public class Projects{
-//     public static void main(String[] args){
-//         Scanner obj= new Scanner(System.in);
-//         System.out.println("Choose your prefered type of measurement");
-//         System.out.println("1 for ");
-//     }
-// }
-            // Project 3: Grade Calculator
-            // Description: Takes a student's score and assigns a grade (A, B, C, D, F).
 import java.util.Scanner;
 public class Projects{
-    public static void main(String[] args) {
-        Scanner myObj= new Scanner(System.in);
-        System.out.println("Input the points you Scored on \n \t Average so as to Determine your Grade");
-        int marks = myObj.nextInt();
-        char grade;
-        if (marks > 100){
-            System.out.println("Invalid Choice!! \n \t NUMBER TOO BIG.");
-        } else if (marks >= 70){
-            grade = 'A' ;
-            System.out.println("You've Got Grade: "+grade); 
-        } else if (marks>=60){
-            grade='B';
-            System.out.println("You've Got Grade: "+grade);
-        } else if (marks >=50){
-            grade='C';
-            System.out.println("You've Got Grade: "+grade);
-        } else if (marks >=40){
-            grade='D';
-            System.out.println("You've Got Grade: "+grade);
-        } else if (marks <=39){
-            grade='F';
-            System.out.println("You've Got Grade: "+grade);
+    public static void main(String[] args){
+        Scanner obj= new Scanner(System.in);
+        System.out.println("Choose your prefered type of measurement");
+        System.out.println("1 for Celsius to Fahrenheit:");
+        System.out.println("2 for Fahrenheit to Celsius:");
+        System.out.println("Choose between 1 and 2: ");
+        int choice= obj.nextInt();
+        double temp,convertedTemp;
+        if (choice==1){
+            System.out.println("Enter Temprature in Celcius: ");
+            temp=obj.nextDouble();
+            convertedTemp=(temp*9/5)+32;
+            System.out.println("Here's the converted tempreture: "+convertedTemp+" F");
+        } else if(choice==2){
+            System.out.println("Enter temprature in Fahrenheit");
+            temp = obj.nextDouble();
+            convertedTemp=(temp-32) * 5/9;
+            System.out.println("Here is the converted tempreture: "+ convertedTemp+" C");
+        } else{
+            System.out.println("Invalid Choice!!!");
         }
     }
 }
+            // Project 3: Grade Calculator
+            // Description: Takes a student's score and assigns a grade (A, B, C, D, F).
+// import java.util.Scanner;
+// public class Projects{
+//     public static void main(String[] args) {
+//         Scanner myObj= new Scanner(System.in);
+//         System.out.println("Input the points you Scored on \n \t Average so as to Determine your Grade");
+//         int marks = myObj.nextInt();
+//         char grade;
+//         if (marks > 100){
+//             System.out.println("Invalid Choice!! \n \t NUMBER TOO BIG.");
+//         } else if (marks >= 70){
+//             grade = 'A' ;
+//             System.out.println("You've Got Grade: " + grade); 
+//         } else if (marks>=60){
+//             grade='B';
+//             System.out.println("You've Got Grade: "+grade);
+//         } else if (marks >=50){
+//             grade='C';
+//             System.out.println("You've Got Grade: "+grade);
+//         } else if (marks >=40){
+//             grade='D';
+//             System.out.println("You've Got Grade: "+grade);
+//         } else if (marks <=39){
+//             grade='F';
+//             System.out.println("You've Got Grade: "+grade);
+//         }
+//     }
+// }
