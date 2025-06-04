@@ -90,27 +90,27 @@
 // }
                 //Project 4: BMI Calculator
                 // Description: Calculates Body Mass Index (BMI) and categorizes it (Underweight, Normal, Overweight, Obese).
-import java.util.Scanner;
-public class Projects{
-    public static void main(String[] args){
-        Scanner myScanner= new Scanner(System.in);
-        System.out.println("\t We're gonna Calculate your BMI;");
-        System.out.println("Enter your Weight in kg's: ");
-        double weight;
-        double height;
-        weight= myScanner.nextDouble();
-        System.out.println("\t \tEnter your height in cm;");
-        height= myScanner.nextDouble();
-        double BMI =weight / (height*height);
-        System.out.println("Your BMI is: "+BMI);
-        if (BMI<18.5) {
-            System.out.println("\t \t Underweight");
-        } else if (BMI<25) {
-            System.out.println("\t \tNormal Weight");
-        } else if (BMI<30){
-            System.out.println("\t \t OverWeight");
-        } else{
-            System.out.println("OBESE");
-        }
-    }
-}
+// import java.util.Scanner;
+// public class Projects{
+//     public static void main(String[] args){
+//         Scanner myScanner= new Scanner(System.in);
+//         System.out.println("\t We're gonna Calculate your BMI;");
+//         System.out.println("Enter your Weight in kg's: ");
+//         double weight;
+//         double height;
+//         weight= myScanner.nextDouble();
+//         System.out.println("\t \tEnter your height in cm;");
+//         height= myScanner.nextDouble();
+//         double BMI =weight / (height*height);
+//         System.out.println("Your BMI is: "+BMI);
+//         if (BMI<18.5) {
+//             System.out.println("\t \t Underweight");
+//         } else if (BMI<25) {
+//             System.out.println("\t \tNormal Weight");
+//         } else if (BMI<30){
+//             System.out.println("\t \t OverWeight");
+//         } else{
+//             System.out.println("OBESE");
+//         }
+//     }
+// }
