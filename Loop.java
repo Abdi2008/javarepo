@@ -15,11 +15,11 @@
 //     }
 // }
 // Counting from 0 to 10 using for loop
-// class Loop {
-//     public static void main(String[] args) {
-//         int num;
-//         for(num=1; num<=100; num=num*10) 
-//             System.out.println("This is a loop that multiplies num by 10 until the value exceeds 100: " + num);
+class Loop {
+    public static void main(String[] args) {
+        int num;
+        for(num=1; num<=100; num=num*3) 
+            System.out.println("This is a loop that multiplies num by 10 until the value exceeds 100: " + num);
         
-//     }
-// }
+    }
+}

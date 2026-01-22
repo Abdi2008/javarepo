@@ -16,7 +16,11 @@ public class Array {
     // }
     public static void main(String[] args) {
     //we'll do multidimensional array's
-        String[][] Nametag = {{"M.r","M.s","MS"}, {"Abdi","Jane","Lisa"}};
-        System.out.println(Nametag[0][2]+" "+Nametag[1][2]+" Welcome");
+        // String[][] Nametag = {{"M.r","M.s","MS"}, {"Abdi","Jane","Lisa"}};
+        // System.out.println(Nametag[0][2]+" "+Nametag[1][2]+" Welcome");
+        int a = 10;
+        int b = 3;
+        //int rem = a % b;
+        System.out.println(a%b);
     }
 }
