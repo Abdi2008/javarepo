@@ -29,30 +29,30 @@
 // }
 public class Prac{
     public static void main(String[] args) {
-        // int[] myArray={200,700,54,87,32};
-        // System.out.println(myArray[2]);
-        // int i = 0;
-        // while (i<5) { 
-        //     System.out.println("This is the value of i: "+i);
-        //     i++;
-        // }
-        // int countdown=3;
-        // while (countdown>0) { 
-        //     System.out.println("Countdown: "+countdown);
-        //     countdown--;
-        // }
-        // System.out.println("\t \tHappy new Year");
-        // int b=0;
-        // do { 
-        //     System.out.println("b is : "+b);
-        //     b++;
-        // } while (b<5);
-        // int sum =0;
-        // for(int i=1;i<=5;i++){
-        //     System.out.println("The numbers are: "+i);
-        //     sum=sum+i;
-        // }
-        // System.out.println("The sum is: "+sum);
+        int[] myArray={200,700,54,87,32};
+        System.out.println(myArray[2]);
+        int i = 0;
+        while (i<5) { 
+            System.out.println("This is the value of i: "+i);
+            i++;
+        }
+        int countdown=3;
+        while (countdown>0) { 
+            System.out.println("Countdown: "+countdown);
+            countdown--;
+        }
+        System.out.println("\t \tHappy new Year");
+        int b=0;
+        do { 
+            System.out.println("b is : "+b);
+            b++;
+        } while (b<5);
+        int sum =0;
+        for(int i= 1;i<=5;i++){
+            System.out.println("The numbers are: "+i);
+            sum=sum+i;
+        }
+        System.out.println("The sum is: "+sum);
                 // Let's say a question asks you to do the sum of the even numbers from 0-30
     
     }
